@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://ec2-16-171-2-66.eu-north-1.compute.amazonaws.com:8081/api/products";  // Backend API URL
+const API_BASE_URL = "51.21.169.122:8081/api/products";  // Backend API URL
 
 // Fetch products by category (computers, mobiles, laptops, pendrives, or all)
 export const getProducts = async (category = "") => {
@@ -15,5 +15,5 @@ export const getProducts = async (category = "") => {
 
 // Get product image URL
 export const getProductImageUrl = (imagePath) => {
-  return `http://ec2-16-171-2-66.eu-north-1.compute.amazonaws.com:8080/api/products/images/${imagePath}`;
+  return `51.21.169.122:8080/api/products/images/${imagePath}`;
 };
